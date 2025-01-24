@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "47381553304",
+    "project_id": "curense-2c07b",
+    "storage_bucket": "curense-2c07b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47381553304:android:49715bcf8ce7c806dcf0ed",
+        "android_client_info": {
+          "package_name": "com.example.app1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0y7sWJknq2S_yn57w8nV0fNwwtlWv7pM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
