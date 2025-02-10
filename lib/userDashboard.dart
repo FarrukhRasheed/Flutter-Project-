@@ -61,7 +61,7 @@ class _UserdashboardState extends State<Userdashboard> {
       ),
       drawer: CurrencyDrawer(onMenuTap: _onMenuTap),
       body: Center(
-        child: Text("USERs DASHBOARD"),
+        child: Text("USER DASHBOARD"),
       ),
     );
   }

@@ -1,11 +1,11 @@
+import 'package:flutter/material.dart';
 import 'package:app1/exchange_rate_screen.dart';
 import 'package:app1/faq_screen.dart';
-import 'package:flutter/material.dart';
 
-class CurrencyDrawer extends StatelessWidget {
+class AdminDrawer extends StatelessWidget {
   final Function(String) onMenuTap;
 
-  const CurrencyDrawer({Key? key, required this.onMenuTap}) : super(key: key);
+  const AdminDrawer({Key? key, required this.onMenuTap}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class CurrencyDrawer extends StatelessWidget {
           DrawerHeader(
             decoration: const BoxDecoration(color: Colors.blue),
             child: const Text(
-              'Currency Menu',
+              'Admin Menu',
               style: TextStyle(color: Colors.white, fontSize: 24),
             ),
           ),
@@ -29,9 +29,16 @@ class CurrencyDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.history),
-            title: const Text('Show History'),
+            title: const Text('Show User History'),
             onTap: () {
               Navigator.pushNamed(context, '/showhistory');
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.list),
+            title: const Text('All Conversion History'),
+            onTap: () {
+              Navigator.pushNamed(context, '/allhistory'); // Admin-only page
             },
           ),
           ListTile(
@@ -50,7 +57,6 @@ class CurrencyDrawer extends StatelessWidget {
                   context, MaterialPageRoute(builder: (_) => FAQScreen()));
             },
           ),
-        
         ],
       ),
     );

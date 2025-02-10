@@ -1,4 +1,5 @@
 import 'package:app1/adminDashboard.dart';
+import 'package:app1/faq_screen.dart';
 // import 'package:app1/authentication.dart';
 import 'package:app1/home.dart';
 import 'package:app1/login.dart';
@@ -53,15 +54,18 @@ class MyApp extends StatelessWidget {
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
       // home: CurrencyConverterWeb(),
-      home: RegisterScreen(),
       // home: RegisterScreen(),
+      home: RegisterScreen(),
+      // home: FAQScreen(),
       // home: SplashScreen(),
-      // home: CurrencyConverterScreen(),
+      // home: CurrencyConverterApp(),
       // home: AuthenticationScreen(),
       routes: {
         '/adminDashboard':(context)=>const Admindashboard(),
         '/userDashboard':(context)=>const Userdashboard(),
         '/login':(context)=>const LoginScreen(),
+        '/convertcurrency':(context)=> CurrencyConverterScreen(),
+        '/showhistory':(context)=> ConversionHistoryScreen(),
       },
     );
   }
