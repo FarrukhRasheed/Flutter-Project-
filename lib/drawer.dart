@@ -1,5 +1,7 @@
+import 'package:app1/convertcurrency.dart';
 import 'package:app1/exchange_rate_screen.dart';
 import 'package:app1/faq_screen.dart';
+import 'package:app1/userfeedback.dart';
 import 'package:flutter/material.dart';
 
 class CurrencyDrawer extends StatelessWidget {
@@ -48,6 +50,14 @@ class CurrencyDrawer extends StatelessWidget {
             onTap: () {
               Navigator.push(
                   context, MaterialPageRoute(builder: (_) => FAQScreen()));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.help_outline),
+            title: const Text('Feedback'),
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (_) => CurrencyFeedbackScreen()));
             },
           ),
         

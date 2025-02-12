@@ -1,6 +1,8 @@
+import 'package:app1/adminfeedback.dart';
 import 'package:flutter/material.dart';
 import 'package:app1/exchange_rate_screen.dart';
 import 'package:app1/faq_screen.dart';
+// import 'package:flutt/adminfeedback.dart';
 
 class AdminDrawer extends StatelessWidget {
   final Function(String) onMenuTap;
@@ -55,6 +57,14 @@ class AdminDrawer extends StatelessWidget {
             onTap: () {
               Navigator.push(
                   context, MaterialPageRoute(builder: (_) => FAQScreen()));
+            },
+          ),
+           ListTile(
+            leading: const Icon(Icons.help_outline),
+            title: const Text('Feedback'),
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (_) => adminFeedback()));
             },
           ),
         ],

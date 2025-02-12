@@ -1,10 +1,12 @@
 import 'package:app1/adminDashboard.dart';
+import 'package:app1/adminfeedback.dart';
 import 'package:app1/faq_screen.dart';
 // import 'package:app1/authentication.dart';
 import 'package:app1/home.dart';
 import 'package:app1/login.dart';
 import 'package:app1/register.dart';
 import 'package:app1/userDashboard.dart';
+import 'package:app1/userfeedback.dart';
 import 'package:flutter/material.dart';
 import 'package:app1/convertcurrency.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -66,6 +68,9 @@ class MyApp extends StatelessWidget {
         '/login':(context)=>const LoginScreen(),
         '/convertcurrency':(context)=> CurrencyConverterScreen(),
         '/showhistory':(context)=> ConversionHistoryScreen(),
+        '/feedback':(context)=> CurrencyFeedbackScreen(),
+        '/Adminfeedback':(context)=> adminFeedback(),
+
       },
     );
   }
